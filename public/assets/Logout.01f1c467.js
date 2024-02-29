@@ -1,0 +1,1 @@
+import{d as o,a as e,u as a}from"./index.78778fd6.js";const p=o({__name:"Logout",setup(n){e.defaults.withCredentials=!0,e.defaults.baseURL="https://cpe-panel.surfi.ch:3000/api/";const s=a();return e.get("../sanctum/csrf-cookie").then(r=>{e.post("logout").then(t=>{s.push({name:"login"})}).catch(t=>{s.push({name:"login"})})}),()=>{}}});export{p as default};
